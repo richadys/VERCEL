@@ -1,0 +1,290 @@
+*{ 
+  margin:0;
+  padding: 0 ;
+font-family:'Poppins', sans-serif ;
+box-sizing:border-box; 
+
+}
+html{ 
+scroll-behavior:smooth ;
+}
+
+body{ 
+  background:#fff;
+  color: #080808;
+}
+
+nav{ 
+  display:flex;
+  align-items:center;
+ justify-content:space-between;
+ flex-wrap:wrap;
+
+}
+
+
+
+
+.logo{
+  width:140px;
+  color: #090909;
+
+}
+nav ul li{ 
+  display:inline-block;
+  list-style:none;
+  margin:10px 20px;
+  
+}
+nav ul li a{ 
+  color:#020202;
+  text-decoration:none;
+  font-size:18px;
+  position:relative;
+ 
+
+}
+nav ul li a::after{
+  content:'';
+  width:0;
+  height:3px;
+  background: #dddfe0;
+  position:absolute;
+ left:0;
+ bottom:-6px;
+ transition:0.5s;
+}
+nav ul li a:hover::after { 
+ width:100%;
+}
+.header-text{ 
+  margin-top: 20%;
+  font-size:30px;
+}
+#header{ 
+  width:100%;
+  height:100vh;
+  background-image:url(images/3320075.webp);
+  background-position:center;
+  background-size:cover;
+  text-align: center;
+  justify-content: center;
+  animation: change 20s infinite ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+  .content h1{
+  
+    margin-top: 10px;
+    color: #fff;
+    font-size: 80px;
+  
+}
+
+.content a{
+  color: #0e0d0d;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 40px;
+  border-radius: 20px;
+}
+
+.content p{
+  
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.content b{
+  background: #ececec;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #121111;
+}
+.content b:hover{
+  background: #e6ebef;
+  color: #fff;
+}
+.content c{
+  background: #030303;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 12px;
+  border-radius: 20px;
+  color: #fff;
+}
+.content c:hover{
+  background: #7d7d7d;
+  color: #fff;
+}
+.content h2{
+  color: #fff;
+  font-size: 60px;
+
+  margin-right: 2px;
+} 
+.content h3{
+margin-top: 300px;
+  padding: 10px 24px;
+  text-decoration: none;
+  font-size: 50px;
+  border-radius: 20px;
+  color: #000000;
+}
+
+/*-----------------------services----------------------*/
+#services { 
+  padding:30px 0;
+  
+}
+.services-list{ 
+  display:grid;
+  grid-template-columns:repeat( auto-fit,minmax(250px,1fr));
+  grid-gap:30px;
+  margin-top:60px;
+  color: #000000;
+  font-size: 12px;
+}
+
+.services-list div{ 
+  background:#fff;
+  padding:40px;
+  font-size:20px;
+  font-weight:300;
+  border-radius:10px;
+  transition:background 0.5s, transform 0.5s;
+  border:3px solid #acaaaa;
+}
+.services-list div i{
+  font-size:50px;
+  margin-bottom:30px;
+
+}
+.services-list div h2{ 
+  margin-inline:100px ;
+  font-size:30px;
+  font-weight:500;
+  margin-bottom: 15px;
+}
+.services-list div a{ 
+  text-decoration:none;
+  color:#fff;
+  font-size:12px;
+  margin-top:20px;
+  display:inline-block;
+
+}
+#offers{ 
+  padding:30px 0;
+ 
+}
+.offers-list{ 
+  display:grid;
+  grid-template-columns:repeat( auto-fit,minmax(250px,1fr));
+  grid-gap:30px;
+  margin-top:50px;
+ 
+ 
+}
+.offers-list div{ 
+  background:#f6f6f6;
+  padding:20px;
+  font-size:13px;
+  font-weight:100px;
+  border-radius:10px;
+  transition:background 0.5s, transform 0.5s;
+  border:3px  #d9d4d7b1;
+ 
+}
+.offers-list div i{
+  font-size:50px;
+  margin-bottom:30px;
+}
+.offers-list div h2{ 
+  font-size:30px;
+  font-weight:500;
+  margin-bottom: 15px;
+}
+.offers-list div a{ 
+  text-decoration:none;
+  color:#fff;
+  font-size:12px;
+  margin-top:20px;
+  display:inline-block;
+
+}
+
+/*--------------------css for small screen------------*/
+nav.fas{ 
+  display:none;
+  }
+  
+  @media only screen and (max-width :600px){ 
+  #header{ 
+  background-image:url(image/Pininfarina-photo-1.jpg);
+  }
+  .header.text{ 
+  margin-top:100%;
+  font-size:16px;
+  }
+  .header-text h1{ 
+  font-size:30px;
+  }
+  nav.fas{ 
+  display:block;
+  font-size:25px;
+  }
+  nav ul{ 
+  background:#e7e4e5;
+  position:fixed;
+  top:0;
+  right:-200px;
+  width:200px;
+  height:100vh;
+  padding-top:50px ;
+  z-index: 2;
+  transition:right 0.5s;
+  }
+  nav ul li{ 
+  display:block;
+  margin:25px;
+  }
+  nav ul .fas{ 
+  position:absolute;
+  top: 25px;
+  left:25px;
+  cursor:pointer;
+  }
+  .sub-title{
+  font-size: 40px;
+  }
+  .about-col-1 ,.about-col-2 {
+  flex-basis:100%;
+  }
+  .about-col-1{ 
+  margin-bottom: 30px;
+  }
+  .about-col-2{ 
+  font-size:14px;
+  }
+  .tab-links{ 
+  font-size:16px;
+  margin-right:20px;
+  }
+  .contact-left,.contact-right{
+  flex-basis:100%;
+  }
+  .copyright{ 
+  font-size:14px;
+       }
+  }
+  #msg{ 
+    color:#61b752;
+    margin-top:-40px;
+    display:block;
+  }
